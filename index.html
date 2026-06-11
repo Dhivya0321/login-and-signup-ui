@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login & Signup UI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+.container{
+    width:400px;
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#4facfe;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#4facfe;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#2196f3;
+}
+
+.text{
+    text-align:center;
+    margin-top:15px;
+}
+
+.text a{
+    color:#2196f3;
+    text-decoration:none;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Login</h2>
+
+    <input type="email" placeholder="Email Address">
+    <input type="password" placeholder="Password">
+
+    <button>Login</button>
+
+    <p class="text">
+        Don't have an account? <a href="#">Sign Up</a>
+    </p>
+
+    <hr style="margin:25px 0;">
+
+    <h2>Sign Up</h2>
+
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email Address">
+    <input type="password" placeholder="Password">
+    <input type="password" placeholder="Confirm Password">
+
+    <button>Sign Up</button>
+
+</div>
+
+</body>
+</html>
